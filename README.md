@@ -17,5 +17,7 @@ ths is the first version of the script
 
 # How to use
 1-Copy the script, create a .py file past the script into file.
+
 2-change information like(mysql user,password).
+
 3-the created backup folder will be in the same folder as script.
