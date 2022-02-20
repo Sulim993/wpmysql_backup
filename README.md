@@ -12,7 +12,8 @@ v2.7.6
 # Dependencies
 
 
-Backup wordpress folder and all mysql databases and create a dump folder 
+Backup wordpress folder and all mysql databases and create a dump folder
+
 ths is the first version of the script 
 
 # How to use
