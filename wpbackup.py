@@ -7,7 +7,7 @@ import socket
 from subprocess import Popen, PIPE
 
  
-date = datetime.datetime.now().strftime('%Y%m%d-%s')
+date = datetime.datetime.now().strftime('%Y%m%d-%h')
 f_date = datetime.datetime.now().strftime('%Y%m%d')
  
 def backup_all_databases():
