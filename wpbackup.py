@@ -11,7 +11,7 @@ date = datetime.datetime.now().strftime('%Y%m%d-%h%m')  # register date and time
 
  
 def backup_all_databases():  # backup all mysql databases
-    args = ['mysqldump', '-u', 'root', '-p123', '--all-databases'] # command to access mysql databases and backup all databasesto gzip
+    args = ['mysqldump', '-u', 'root', '-p123', '--all-databases'] # command to access mysql databases and backup all databases to gzip
     with open("%s.sql.gz" % date, 'wb') as f:
         p1 = Popen(args, stdout=PIPE)
         p2 = Popen('gzip', stdin=p1.stdout, stdout=f)
