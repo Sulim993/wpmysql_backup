@@ -26,4 +26,4 @@ this is the first version of the script
 # License & copyright
 CC SULIMAN OBEID (OPENCLASSROOMS)
 
-Licensed under [MIT License](LICENSE). 
+Licensed under the [MIT License](LICENSE). 
