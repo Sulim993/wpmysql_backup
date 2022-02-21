@@ -22,3 +22,7 @@ this is the first version of the script
 2-change information like(mysql user,password).
 
 3-the created backup folder will be in the same folder as script.
+
+# License and copyright
+
+Licensed under [MIT License](LICENSE). 
