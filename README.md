@@ -1,7 +1,7 @@
 # Role Name
 
 
-wpbackup v1.1
+wpbackup v1.0
 
 # Python version
 
