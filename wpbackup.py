@@ -1,4 +1,8 @@
-#!/usr/local/bin/python
+#!/usr/local/bin/python# Author SULIMAN OBEID(OC)
+# Python v2.7  
+# script v1.0 (next version idea to transfer the backup folder to master machine)
+
+
 import optparse
 import os
 import datetime
@@ -7,12 +11,12 @@ import socket
 from subprocess import Popen, PIPE
 
  
-date = datetime.datetime.now().strftime('%Y-%m-%d--%H:%M')  # register date and time
+date = socket.gethostname() + datetime.datetime.now().strftime('%Y-%m-%d--%H:%M')  # register date and time
 
  
 def backup_all_databases():  # backup all mysql databases
           # to avoid warning message using mysql password create a file in '/etc/mysql/mysql-backup-script.cnf' and put user and password info
-    args = ['mysqldump', '--defaults-extra-file=/etc/mysql/mysql-backup-script.cnf', '--all-databases'] # command to access mysql databases and backup all databases to gzip
+    args = ['sudo', 'mysqldump', '--defaults-extra-file=/etc/mysql/mysql-backup-script.cnf', '--all-databases'] # command to access mysql databases and backup all databases to gzip
     with open("%s.sql.gz" % date, 'wb') as f:  # Opening a file using with
         p1 = Popen(args, stdout=PIPE) # executes the command specified by the string command
         p2 = Popen('gzip', stdin=p1.stdout, stdout=f)
