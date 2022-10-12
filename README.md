@@ -24,6 +24,6 @@ this is the first version of the script
 3-the created backup folder will be in the same folder as script.
 
 # License & copyright
-CC SULIMAN OBEID (OPENCLASSROOMS)
+CC SULIMAN OBEID 
 
 Licensed under the [MIT License](LICENSE). 
